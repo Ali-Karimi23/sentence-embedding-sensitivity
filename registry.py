@@ -1,3 +1,10 @@
+import os
+REPO = "content/drive/MyDrive/00-github/sentence-embedding-sensitivity"
+DATA = os.path.join(REPO,"Data")
+SICK_DATA = os.path.join(DATA,"sick_dataset")
+SR_DATA = os.path.join(DATA,"sr_dataset")
+VISLA_DATA = os.path.join(DATA,"VISLA")
+
 model_dict = {
     "paraphrase_distilroberta": "paraphrase-distilroberta-base-v1",
     "msmarco_roberta_base_v3": "msmarco-roberta-base-v3",
@@ -9,11 +16,12 @@ model_dict = {
     "bge_base_v15": "BAAI/bge-base-en-v1.5"
 }
 
-binary_datasets = {
+benchmark_datasets = {
     "MRPC": ("glue", "mrpc"),
     "QQP": ("glue", "qqp"),
     "PAWS": ("paws", "labeled_final"),
     "STS-B": ("glue", "stsb"),
-    "SICK": ("sick")
+    "SICK": f"{SICK_DATA}",
+    "SR": f"{SR_DATA}"
 }
 
