@@ -1,15 +1,16 @@
 import os
 REPO = "content/drive/MyDrive/00-github/sentence-embedding-sensitivity"
 DATA = os.path.join(REPO,"Data")
+DATASETS = os.path.join(DATA,"datasets")
 SICK_DATA = os.path.join(DATA,"sick_dataset")
 SR_DATA = os.path.join(DATA,"sr_dataset")
 VISLA_DATA = os.path.join(DATA,"VISLA")
 
 model_dict = {
-    "paraphrase_distilroberta": "paraphrase-distilroberta-base-v1",
-    "msmarco_roberta_base_v3": "msmarco-roberta-base-v3",
-    "paraphrase_mpnet": "paraphrase-mpnet-base-v2",
-    "paraphrase_xlm_r": "paraphrase-xlm-r-multilingual-v1",
+    "par_dis_roberta": "paraphrase-distilroberta-base-v1",
+    "roberta_base_v3": "msmarco-roberta-base-v3",
+    "par_mpnet": "paraphrase-mpnet-base-v2",
+    "par_xlm_r": "paraphrase-xlm-r-multilingual-v1",
     "labse": "LaBSE",
     "e5_base": "intfloat/e5-base-v2",
     "gte_base": "thenlper/gte-base",
