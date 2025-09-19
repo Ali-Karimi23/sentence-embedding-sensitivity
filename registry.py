@@ -13,9 +13,7 @@ binary_datasets = {
     "MRPC": ("glue", "mrpc"),
     "QQP": ("glue", "qqp"),
     "PAWS": ("paws", "labeled_final"),
+    "STS-B": ("glue", "stsb"),
+    "SICK": ("sick")
 }
 
-five_class_datasets = {
-    "STS-B": ("glue", "stsb"),
-    "SICK": ("sick", None),
-}
